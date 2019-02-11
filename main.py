@@ -14,7 +14,7 @@ def welcomeForm():
 
 @app.route('/similarWords',methods=['POST'])
 def returnSimilar(word='')->'html':
-    vectorization = w2v.Word2Vec.load(os.path.join("E:/IDC_Policies/trained","vectorization.w2v"))
+    vectorization = w2v.Word2Vec.load(os.path.join("./","vectorization.w2v"))
     word = request.form['word']
     try:
         result = vectorization.wv.most_similar(positive = word)
