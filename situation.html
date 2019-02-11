@@ -1,0 +1,8 @@
+{% extends 'base.html'%}
+{% block body%}
+<h2>Sorry! '{{the_word}}' is not a part of the vocabulary.</h2>
+<p>Use this button to return to previous page:</p>
+<form action = '/'>
+    <input type='SUBMIT' value='Go Back'>
+</form>
+{% endblock %}

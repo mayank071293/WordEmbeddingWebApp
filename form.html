@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+{% block body%}
+<h2> {{the_title}} </h2>
+
+<form method="POST" action = '/similarWords'>
+    <table>
+        <p>use this form to search similar words</p>
+        <tr>
+            <td>Word:</td>
+             <td><input name='word' type='TEXT' width="60"></td>
+        </tr>
+        
+    </table>
+    <p>Click this button to submit</p>
+    <p><input value='Generate Similar' type = 'SUBMIT'</p>
+</form>
+{% endblock%}
